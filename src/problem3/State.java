@@ -18,11 +18,5 @@ public enum State {
         public int getValue(){
             return this.value;
         }
-    }
-
-
-
-
-
-
 }
+
