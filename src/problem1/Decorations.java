@@ -1,13 +1,21 @@
 package problem1;
 
-public class Decorations extends FlowerBouquet {
+public class Decorations {
+
+    String nameDeco;
+    double costDeco;
+
     public Decorations(String nameDeco, double costDeco) {
-        String description;
-        double cost;
+        this.nameDeco = nameDeco;
+        this.costDeco = costDeco;
     }
 
-    Decorations paperWrap = new Decorations("Paper wrap", 5.0);
-    Decorations card = new Decorations("Card", 6.0);
-    Decorations balloon = new Decorations("Balloon", 7.0);
-    Decorations glitter = new Decorations("Glitter", 8.0);
+    public String getNameDeco(){
+        return this.nameDeco;
+    }
+
+    public double getCostDeco(){
+        return this.costDeco;
+    }
+
 }
