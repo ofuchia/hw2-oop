@@ -3,6 +3,7 @@ package problem5;
 import java.util.Arrays;
 import java.util.List;
 
+
 public class TestShoppingCart {
     public static void main(String[] args) {
         List<CartItem> list = Arrays.asList(
@@ -11,22 +12,19 @@ public class TestShoppingCart {
                 new CartItem("Tesla", 1, 50)
         );
         ShoppingCart shoppingCart = new ShoppingCart(list);
-        // write your code here for strategy 1
 
 
+        // write your code here for strategy 1: 10% off all products
+        shoppingCart.checkout(shoppingCart, 1);
         // end of your code
-        shoppingCart.checkout();
 
         // write your code here for strategy 2
-
-
+        shoppingCart.checkout(shoppingCart, 2);
         // end of your code
-        shoppingCart.checkout();
 
         // write your code here for strategy 3
-
-
+        shoppingCart.checkout(shoppingCart, 3);
         // end of your code
-        shoppingCart.checkout();
+
     }
 }
