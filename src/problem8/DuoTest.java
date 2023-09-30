@@ -1,6 +1,7 @@
 package problem8;
 
 import java.time.LocalDate;
+import java.util.Arrays;
 
 public class DuoTest {
     public static void main(String[] args) {
@@ -12,7 +13,7 @@ public class DuoTest {
                         LocalDate.of(1999, 6, 28),
                 };
         // Uncomment below to test your solution.
-        /*
+
         Duo<LocalDate> mm = minmax(birthdays);
         System.out.println("min = " + mm.getFirst());
         System.out.println("max = " + mm.getSecond());
@@ -21,7 +22,7 @@ public class DuoTest {
         Duo<String> mm2 = minmax(strs);
         System.out.println("min = " + mm2.getFirst());
         System.out.println("max = " + mm2.getSecond());
-        */
+
 
     }
 
@@ -30,7 +31,18 @@ public class DuoTest {
      * Input: arr - an array of elements
      * Return: a Duo object with the min and max value, or null if arr is null or empty
      */
+    public static <E> Duo minmax(E [] arr){
+        if(arr == null){
+            return null;
+        }
+        Arrays.sort(arr);
+        E first = arr[0];
+        E second = arr[arr.length-1];
 
+        Duo retAns = new Duo(first, second);
+        return retAns;
+
+    }
 
     /**
      * Define a method called findMiddle() to gets element stored at the middle of the array.
