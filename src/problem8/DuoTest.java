@@ -49,6 +49,16 @@ public class DuoTest {
      * Input: an array of elements, e.g., an array of integers, an array of strings
      * Return: element at the middle
      */
+    public static <E> Duo findMiddle(E [] arr){
+        if(arr == null){
+            return null;
+        }
+        //get element in middle of array
+        E midEle = arr[arr.length/2];
+        Duo ans = new Duo();
 
+        ans.setFirst(midEle);
+        return ans;
+    }
 
 }
