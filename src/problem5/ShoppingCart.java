@@ -38,6 +38,7 @@ public class ShoppingCart {
                 System.out.println("$" + totalPrice);
             }
         }
+        //promo number 3
         else if (promoNumber == 3){
             double totalPrice= 0.0;
             //calculating total before promo
