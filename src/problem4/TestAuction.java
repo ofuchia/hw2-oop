@@ -10,5 +10,9 @@ public class TestAuction {
         Bidder wei = new Bidder("Wei");
         Bidder scherger = new Bidder("Scherger");
 
+        sanchez.subscribe(prod1);
+        wei.subscribe(prod1);
+        scherger.subscribe(prod1);
+
     }
 }
