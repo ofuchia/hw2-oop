@@ -11,4 +11,8 @@ public class Bidder {
     public String toString() {
         return bidderName;
     }
+
+
+    //bidder notified when a higher price is put down.
+
 }
